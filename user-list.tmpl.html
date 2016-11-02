@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in vm.users track by $index">
+                    <td>{{user.email }}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user. lastName}}</td>
+                    <td  ng-click="vm.deleteUser(user.firstName)" class="glyphicon glyphicon-remove">
+
+                    </td>
+
+
+
+                </tr>
+                </tbody>
+
+
+             </table>
+        </div>
+
+    </div>
+
+
+
+
+</div>

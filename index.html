@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='task'>
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Egen Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body>
+
+<header>
+
+
+
+<h1 id="heading">Cooking App</h1>
+
+
+<br><br>
+
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#/user-list">User List</a></li>
+    <li role="presentation"><a href="#/add-user">Add User</a></li>
+
+</ul>
+    <br><br>
+</header>
+
+
+
+
+
+<!--<div  ng-controller="taskcontroller as vm">-->
+
+
+    <!--<div class="container-fluid">-->
+
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+                <!--<form ng-submit="vm.addUser()">-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputEmail1">Email address</label>-->
+                        <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="vm.newuser.email">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputfirstname">FirstName</label>-->
+                        <!--<input type="text" class="form-control" id="exampleInputfirstname" placeholder="firstname" ng-model="vm.newuser.firstName">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="exampleInputlastname">LastName</label>-->
+                        <!--<input type="text" class="form-control" id="exampleInputlastname" placeholder="lastname" ng-model="vm.newuser.lastName">-->
+                    <!--</div>-->
+
+
+                    <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                <!--</form>-->
+
+
+
+
+
+
+
+
+            <!--</div>-->
+
+            <!--<div class="col-sm-6">-->
+
+                <!--<table class="table table-striped">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>Email</th>-->
+                        <!--<th>First Name</th>-->
+                        <!--<th>Last Name</th>-->
+                        <!--<th>Action</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <!--<tr ng-repeat="user in vm.users track by $index">-->
+                        <!--<td>{{user.email }}</td>-->
+                        <!--<td>{{user.firstName}}</td>-->
+                        <!--<td>{{user. lastName}}</td>-->
+                        <!--<td  ng-click="vm.deleteUser(user.firstName)" class="glyphicon glyphicon-remove">-->
+
+                        <!--</td>-->
+
+
+
+                    <!--</tr>-->
+                    <!--</tbody>-->
+
+
+                <!--</table>-->
+            <!--</div>-->
+
+
+
+
+
+
+
+
+
+
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+
+
+
+
+<!--</div>-->
+
+
+<section class="container" ng-view="">
+
+</section>
+
+
+
+<footer class="container">
+    &copy;2015 | Thomas
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.16.4/lodash.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-messages.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+<script src="task.module.js"></script>
+<script src="add-user.controller.js"></script>
+<script src="user-list.controller.js"></script>
+
+
+
+
+</body>
+</html>

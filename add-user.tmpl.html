@@ -1,0 +1,27 @@
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <form ng-submit="addUserVm.addUser()">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="addUserVm.newuser.email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputfirstname">FirstName</label>
+                        <input type="text" class="form-control" id="exampleInputfirstname" placeholder="firstname" ng-model="addUserVm.newuser.firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputlastname">LastName</label>
+                        <input type="text" class="form-control" id="exampleInputlastname" placeholder="lastname" ng-model="addUserVm.newuser.lastName">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
